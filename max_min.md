@@ -15,4 +15,4 @@
     }
 
     printf("max = %d\n", max); // max = 
-      printf("min = %d\n", min); // min = 1
+    printf("min = %d\n", min); // min = 1
