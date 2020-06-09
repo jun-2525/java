@@ -1,4 +1,4 @@
-public class UserArrayStack {
+    public class UserArrayStack {
 
     int top;
     int [] stack;
