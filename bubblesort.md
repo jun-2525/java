@@ -1,34 +1,20 @@
-	# include <stdio.h>
-	# define MAX_SIZE 5
+int main()
+2.{
+3. int N = 5; //배열의 길이
+4. int i, j, temp;
+5. int data[] = { 5, 3, 7, 9, 1 };
+6.
+7. // Bubble Sort
+8. for (i = 0; i < N; i++) {
+9. for (j = 0; j < N-(i+1); j++) {
+10. if (data[j] > data[j+1]) {
+11. // 자리교환
+12. temp = data[j+1];
+13. data[j+1] = data[j];
+14. data[j] = temp;
+15. }
+16. }
+17. }
+18.}
 
-	// 버블 정렬
-	void bubble_sort(int list[], int n){
- 	 int i, j, temp;
-
- 	 for(i=n-1; i>0; i--){
- 	   // 0 ~ (i-1)까지 반복
-  	  for(j=0; j<i; j++){
-  	    // j번째와 j+1번째의 요소가 크기 순이 아니면 교환
-    	  if(list[j]<list[j+1]){
-    	    temp = list[j];
-    	    list[j] = list[j+1];
-    	    list[j+1] = temp;
-   	   }
-  	  }
-	  }
-	}
-
-	void main(){
- 	 int i;
- 	 int n = MAX_SIZE;
- 	 int list[n] = {7, 4, 5, 1, 3};
-
- 	 // 버블 정렬 수행
- 	 bubble_sort(list, n);
-
- 	 // 정렬 결과 출력
- 	 for(i=0; i<n; i++){
- 	   printf("%d\n", list[i]);
-	  }
-	}
-https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html
+출처: https://bowbowbow.tistory.com/10 [멍멍멍]
